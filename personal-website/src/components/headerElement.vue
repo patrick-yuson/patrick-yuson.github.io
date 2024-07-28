@@ -1,18 +1,22 @@
 <script setup>
-import iconElement from "./iconElement.vue";
+import iconElement from './iconElement.vue'
 
-const icon = defineModel("icon", { default: null, type: [String, null] });
-const name = defineModel("name", { default: null, type: [String, null] });
-const size = defineModel("size", { default: null, type: [String, null] });
-const weight = defineModel("weight", { default: null, type: [String, null] });
-const hover = defineModel("hover", { default: null, type: [Boolean, null] });
+const icon = defineModel('icon', { default: null, type: [String, null] })
+const name = defineModel('name', { default: null, type: [String, null] })
+const size = defineModel('size', { default: null, type: [String, null] })
+const weight = defineModel('weight', { default: null, type: [String, null] })
+const hover = defineModel('hover', { default: null, type: [Boolean, null] })
 
 const emits = defineEmits(['clickedMetaLeft'])
 </script>
 
 <template>
   <div class="header-main">
-    <div class="meta-left" :class="{ 'hover-enabled': hover === true }" @click="emits('clickedMetaLeft')">
+    <div
+      class="meta-left"
+      :class="{ 'hover-enabled': hover === true }"
+      @click="emits('clickedMetaLeft')"
+    >
       <div v-if="icon || $slots.icon" class="header-icon">
         <iconElement :name="icon" :filled="true" />
         <slot name="icon"></slot>
@@ -22,7 +26,7 @@ const emits = defineEmits(['clickedMetaLeft'])
         class="header-name"
         :class="{
           bold: weight === 'bold',
-          h3: size === 'h3',
+          h3: size === 'h3'
         }"
       >
         {{ name }}
@@ -36,7 +40,7 @@ const emits = defineEmits(['clickedMetaLeft'])
 </template>
 
 <style scoped>
-@import url("../assets/base.css");
+@import url('../assets/base.css');
 .header-main {
   display: flex;
   flex-direction: row;
@@ -54,7 +58,7 @@ const emits = defineEmits(['clickedMetaLeft'])
   gap: 5px;
 }
 .hover-enabled:hover {
-  color: var(--vt-c-white-soft);
+  color: var(--color-text);
   cursor: pointer;
 }
 </style>

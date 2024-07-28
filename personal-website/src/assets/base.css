@@ -23,6 +23,13 @@
   --font-size-h3: 20px;
 
   --padding-component: 20px;
+  
+  --hh-c-brown: #473833;
+  --hh-c-brown-light: #55423d;
+  --hh-c-text-header: #fffffe;
+  --hh-c-text-body: #fff3ec;
+  --hh-c-text-button: #271c19;
+  --hh-c-button: #ffc0ad;
 }
 
 /* semantic color variables for this project */
@@ -42,7 +49,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-background: var(--vt-c-black);
+    --color-background: var(--hh-c-brown);
     --color-background-soft: var(--vt-c-black-soft);
     --color-background-mute: var(--vt-c-black-mute);
 
@@ -50,7 +57,7 @@
     --color-border-hover: var(--vt-c-divider-dark-1);
 
     --color-heading: var(--vt-c-text-dark-1);
-    --color-text: var(--vt-c-white-soft);
+    --color-text: var(--hh-c-text-body);
   }
 }
 

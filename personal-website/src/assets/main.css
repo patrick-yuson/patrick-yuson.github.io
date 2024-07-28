@@ -8,8 +8,11 @@ a,
   padding: 3px;
 }
 
-.component-padding {
+.component {
   padding: var(--padding-component);
+  background-color: var(--hh-c-brown-light);
+  margin: 10px;
+  border-radius: 12px;
 }
 .h3 {
   font-size: var(--font-size-h3);
