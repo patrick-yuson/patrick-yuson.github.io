@@ -6,12 +6,13 @@ const name = defineModel('name', { default: null, type: [String, null] })
 const size = defineModel('size', { default: null, type: [String, null] })
 const weight = defineModel('weight', { default: null, type: [String, null] })
 const hover = defineModel('hover', { default: null, type: [Boolean, null] })
+const color = defineModel('color', { default: 'white', type: [String, null] })
 
 const emits = defineEmits(['clickedMetaLeft'])
 </script>
 
 <template>
-  <div class="header-main">
+  <div class="header-main" :class="{ 'white': color === 'white', 'grey': color === 'grey' }">
     <div
       class="meta-left"
       :class="{ 'hover-enabled': hover === true }"
@@ -45,6 +46,12 @@ const emits = defineEmits(['clickedMetaLeft'])
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 20px;
+}
+.white {
+  color: var(--hh-c-text-header);
+}
+.grey {
   color: var(--vt-c-text-dark-2);
 }
 .meta-right {

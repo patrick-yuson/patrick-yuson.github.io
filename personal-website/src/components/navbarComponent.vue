@@ -19,6 +19,7 @@ const handleMetaLeftClick = () => {
         name="My Library"
         icon="library_music"
         :hover="true"
+        color="grey"
         @clicked-meta-left="handleMetaLeftClick"
       />
     </div>
