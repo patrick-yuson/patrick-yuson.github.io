@@ -1,8 +1,10 @@
-<script setup></script>
+<script setup>
+import navbarComponent from '@/components/navbarComponent.vue'
+</script>
 
 <template>
   <div class="about-main">
-    <div>About</div>
+    <navbarComponent />
   </div>
 </template>
 

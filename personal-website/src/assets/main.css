@@ -8,6 +8,16 @@ a,
   padding: 3px;
 }
 
+.component-padding {
+  padding: var(--padding-component);
+}
+.h3 {
+  font-size: var(--font-size-h3);
+}
+.bold {
+  font-weight: bold;
+}
+
 @media (hover: hover) {
   a:hover {
     background-color: hsla(160, 100%, 37%, 0.2);
