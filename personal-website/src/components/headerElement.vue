@@ -6,13 +6,15 @@ const name = defineModel("name", { default: null, type: [String, null] });
 const size = defineModel("size", { default: null, type: [String, null] });
 const weight = defineModel("weight", { default: null, type: [String, null] });
 const hover = defineModel("hover", { default: null, type: [Boolean, null] });
+
+const emits = defineEmits(['clickedMetaLeft'])
 </script>
 
 <template>
   <div class="header-main">
-    <div class="meta-left" :class="{ 'hover-enabled': hover === true }">
+    <div class="meta-left" :class="{ 'hover-enabled': hover === true }" @click="emits('clickedMetaLeft')">
       <div v-if="icon || $slots.icon" class="header-icon">
-        <iconElement :name="icon" />
+        <iconElement :name="icon" :filled="true" />
         <slot name="icon"></slot>
       </div>
       <div
