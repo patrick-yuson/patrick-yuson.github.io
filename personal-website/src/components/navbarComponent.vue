@@ -1,9 +1,10 @@
 <script setup>
+import headerElement from './headerElement.vue';
 </script>
 
 <template>
     <div class="navbar-main component-padding">
-        <div class="h3 bold">My Library</div>
+        <headerElement size="h3" weight="bold" name="My Library"/>
     </div>
 </template>
 
