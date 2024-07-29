@@ -19,7 +19,7 @@ const emits = defineEmits(['clickedMetaLeft'])
       @click="emits('clickedMetaLeft')"
     >
       <div v-if="icon || $slots.icon" class="header-icon">
-        <iconElement :name="icon" :filled="true" />
+        <iconElement :name="icon" :google="true" :filled="true" />
         <slot name="icon"></slot>
       </div>
       <div

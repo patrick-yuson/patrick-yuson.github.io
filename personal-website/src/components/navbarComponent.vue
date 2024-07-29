@@ -23,7 +23,12 @@ const handleMetaLeftClick = () => {
       />
     </div>
     <div class="navbar-hidden" v-else>
-      <iconElement name="library_music" class="navbar-hidden-icon" @click="handleMetaLeftClick" />
+      <iconElement
+        name="library_music"
+        class="navbar-hidden-icon"
+        :google="true"
+        @click="handleMetaLeftClick"
+      />
     </div>
   </div>
 </template>

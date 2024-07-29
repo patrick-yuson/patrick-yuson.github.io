@@ -14,7 +14,7 @@ import cardElement from './cardElement.vue'
     <div class="now-playing-artist">Lumin Smart Panel</div>
     <cardElement header="My Task">
       <template #content>
-        <div>
+        <div class="">
           With a cohort of two other interns, I was tasked to build an application for Customer
           Support that used company data sources to provide context about Lumin's devices in a way
           that is efficient and digestible
