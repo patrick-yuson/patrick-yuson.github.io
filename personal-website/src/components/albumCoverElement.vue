@@ -14,7 +14,7 @@ const src = defineModel('src', { default: null, type: [String, null] })
     justify-content: center;
 }
 .album-cover-img {
-    height: 90%;
-    width: 90%;
+    height: 100%;
+    width: 100%;
 }
 </style>

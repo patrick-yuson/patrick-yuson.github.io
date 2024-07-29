@@ -11,8 +11,13 @@ a,
 .component {
   padding: var(--padding-component);
   background-color: var(--hh-c-brown-light);
-  margin: 10px;
-  border-radius: 12px;
+  margin: 10px 10px 10px 0px;
+  border-radius: var(--border-radius-main);
+  overflow-y: scroll;
+  max-height: 100vh;
+}
+.h2 {
+  font-size: var(--font-size-h2);
 }
 .h3 {
   font-size: var(--font-size-h3);

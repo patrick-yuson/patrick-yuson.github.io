@@ -21,11 +21,15 @@
   --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
 
   --font-size-h3: 20px;
+  --font-size-h2: 24px;
 
   --padding-component: 20px;
+
+  --border-radius-main: 12px;
   
   --hh-c-brown: #473833;
   --hh-c-brown-light: #55423d;
+  --hh-c-brown-lightest: #6e554e;
   --hh-c-text-header: #fffffe;
   --hh-c-text-body: #fff3ec;
   --hh-c-text-button: #271c19;
