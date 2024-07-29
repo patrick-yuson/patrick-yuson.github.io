@@ -8,7 +8,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="center-main component" :class="{ full: navbarToggled === false }">
+  <div class="center-main component no-padding" :class="{ full: navbarToggled === false }">
     <profileComponent />
   </div>
 </template>
@@ -20,5 +20,8 @@ const props = defineProps({
 }
 .full {
   width: 100%;
+}
+.no-padding {
+  padding: 0px;
 }
 </style>
