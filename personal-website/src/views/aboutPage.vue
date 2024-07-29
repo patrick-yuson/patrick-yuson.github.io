@@ -1,13 +1,13 @@
 <script setup>
 import navbarComponent from '@/components/navbarComponent.vue'
 import nowPlaying from '@/components/nowPlaying.vue'
+import centerComponent from '@/components/centerComponent.vue'
 </script>
 
 <template>
   <div class="about-main">
-    <!-- <div>Hello World</div> -->
     <navbarComponent />
-    <div class="placeholder">Artist Name</div>
+    <centerComponent />
     <nowPlaying />
   </div>
 </template>
@@ -19,7 +19,7 @@ import nowPlaying from '@/components/nowPlaying.vue'
   justify-content: space-between;
   width: 100vw;
 }
-.placeholder { 
+.placeholder {
   margin-top: 10px;
 }
 </style>

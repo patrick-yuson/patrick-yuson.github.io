@@ -12,7 +12,7 @@ const emits = defineEmits(['clickedMetaLeft'])
 </script>
 
 <template>
-  <div class="header-main" :class="{ 'white': color === 'white', 'grey': color === 'grey' }">
+  <div class="header-main" :class="{ white: color === 'white', grey: color === 'grey' }">
     <div
       class="meta-left"
       :class="{ 'hover-enabled': hover === true }"
