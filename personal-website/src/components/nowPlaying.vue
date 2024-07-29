@@ -22,7 +22,7 @@ import cardElement from './cardElement.vue'
 
 <style scoped>
 .now-playing-main {
-  width: 25vw;
+  width: 32vw;
 }
 .now-playing-title {
   margin: 20px 0px 0px 0px;

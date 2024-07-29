@@ -1,18 +1,17 @@
 <script setup>
-import { ref } from 'vue'
 import headerElement from './headerElement.vue'
 import iconElement from './iconElement.vue'
 
-const showingLibrary = ref(false)
+const showingNav = defineModel()
 
 const handleMetaLeftClick = () => {
-  showingLibrary.value = !showingLibrary.value
+  showingNav.value = !showingNav.value
 }
 </script>
 
 <template>
   <div class="navbar-main component">
-    <div class="navbar-showing" v-if="showingLibrary">
+    <div class="navbar-showing" v-if="showingNav">
       <headerElement
         size="h3"
         weight="bold"
@@ -37,7 +36,7 @@ const handleMetaLeftClick = () => {
   width: 20vw;
 }
 .navbar-hidden {
-  width: auto;
+  width: 100%;
 }
 .navbar-hidden-icon {
   color: var(--vt-c-text-dark-2);

@@ -11,7 +11,7 @@ a,
 .component {
   padding: var(--padding-component);
   background-color: var(--hh-c-brown-light);
-  margin: 10px 10px 10px 0px;
+  margin: 10px;
   border-radius: var(--border-radius-main);
   overflow-y: scroll;
   max-height: 100vh;
