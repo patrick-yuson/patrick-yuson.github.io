@@ -1,5 +1,6 @@
 <script setup>
 import iconElement from './iconElement.vue'
+import centerSectionElement from './centerSectionElement.vue';
 const icons = [
   {
     id: 1,
@@ -48,6 +49,12 @@ function redirectToUrl(url) {
         class="clickable"
       />
     </div>
+    <centerSectionElement header="Experience">
+      <template #content>
+      <!-- TODO: put list of "songs" -->
+        <div>Hello World</div>
+      </template>
+    </centerSectionElement>
   </div>
 </template>
 

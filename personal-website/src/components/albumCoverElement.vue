@@ -16,5 +16,6 @@ const src = defineModel('src', { default: null, type: [String, null] })
 .album-cover-img {
   height: 100%;
   width: 100%;
+  border-radius: var(--border-radius-album);
 }
 </style>
