@@ -1,4 +1,6 @@
 <script setup>
+import headerElement from './headerElement.vue'
+
 const header = defineModel('header', { default: null, type: [String, null] })
 const content = defineModel('content', { default: null, type: [String, null] })
 </script>
@@ -6,7 +8,7 @@ const content = defineModel('content', { default: null, type: [String, null] })
 <template>
   <div class="card-main">
     <div v-if="header || $slots.header" class="card-header">
-      {{ header }}
+      <headerElement :name="header" size="h4" />
       <slot name="header"></slot>
     </div>
     <div v-if="content || $slots.content" class="card-content">

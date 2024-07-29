@@ -27,7 +27,8 @@ const emits = defineEmits(['clickedMetaLeft'])
         class="header-name"
         :class="{
           bold: weight === 'bold',
-          h3: size === 'h3'
+          h3: size === 'h3',
+          h4: size === 'h4'
         }"
       >
         {{ name }}
