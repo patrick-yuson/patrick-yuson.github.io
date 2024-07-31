@@ -60,19 +60,37 @@ function redirectToUrl(url) {
 
 <style scoped>
 .profile-header-card {
-  background-image: url('https://i.scdn.co/image/ab67618600001016f0f7c27f520117bc06b69f45');
+  position: relative;
   height: 40vh;
   width: 100%;
   background-size: cover;
   background-position: 50% 20%;
+  overflow: hidden; /* Ensure the pseudo-element stays within bounds */
+}
+
+.profile-header-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('https://i.scdn.co/image/ab67618600001016f0f7c27f520117bc06b69f45');
+  background-size: cover;
+  background-position: 50% 20%;
+  filter: brightness(85%);
+  z-index: 1;
 }
 .profile-name {
-  padding: 25vh 0px 0px 20px;
+  position: absolute;
+  z-index: 2;
+  bottom: 20px;
+  left: 20px;
   font-size: 75px;
   font-weight: bold;
 }
 .profile-socials {
-  display: flex;
+  display: flex;  
   flex-direction: row;
   height: 10vh;
   width: 100%;
