@@ -29,9 +29,9 @@ const navbarToggled = ref(false)
   display: flex;
   flex-direction: row;
   gap: 5px;
-  width: 100%;
+  width: 70vw;
 }
 .now-playing {
-  width: 34vw;
+  width: 30vw;
 }
 </style>
