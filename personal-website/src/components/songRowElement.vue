@@ -36,7 +36,7 @@ import albumCoverElement from './albumCoverElement.vue';
 .song-row-title-artist {
     display: flex;
     flex-direction: column;
-    width: 40vw;
+    width: 60%;
     font-size: var(--font-size-h4);
 }
 .song-row-title {

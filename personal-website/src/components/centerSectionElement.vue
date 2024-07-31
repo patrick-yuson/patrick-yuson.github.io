@@ -18,6 +18,5 @@ const header = defineModel('header', { default: null, type: [String, null] })
 <style scoped>
 .center-section-main {
   margin: 20px;
-  width: 100%;
 }
 </style>
