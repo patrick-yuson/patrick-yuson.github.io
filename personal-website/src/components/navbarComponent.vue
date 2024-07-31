@@ -10,7 +10,7 @@ const handleMetaLeftClick = () => {
 </script>
 
 <template>
-  <div class="navbar-main component">
+  <div class="navbar-main component" :class="{ 'showing': showingNav }">
     <div class="navbar-showing" v-if="showingNav">
       <headerElement
         size="h3"
@@ -36,11 +36,12 @@ const handleMetaLeftClick = () => {
 <style scoped>
 .navbar-main {
   height: 100vh;
+  width: 65px;
 }
-.navbar-showing {
-  width: 20vw;
+.showing {
+  width: 300px;
 }
-.navbar-hidden {
+.hidden {
   width: 100%;
 }
 .navbar-hidden-icon {

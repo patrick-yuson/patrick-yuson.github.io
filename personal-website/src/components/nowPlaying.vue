@@ -1,7 +1,7 @@
 <script setup>
-import headerElement from './headerElement.vue'
-import albumCoverElement from './albumCoverElement.vue'
-import cardElement from './cardElement.vue'
+import headerElement from "./headerElement.vue";
+import albumCoverElement from "./albumCoverElement.vue";
+import cardElement from "./cardElement.vue";
 </script>
 
 <template>
@@ -15,9 +15,9 @@ import cardElement from './cardElement.vue'
     <cardElement header="My Task">
       <template #content>
         <div class="">
-          With a cohort of two other interns, I was tasked to build an application for Customer
-          Support that used company data sources to provide context about Lumin's devices in a way
-          that is efficient and digestible
+          With a cohort of two other interns, I was tasked to build an application for
+          Customer Support that used company data sources to provide context about Lumin's
+          devices in a way that is efficient and digestible
         </div>
       </template>
     </cardElement>
@@ -26,7 +26,8 @@ import cardElement from './cardElement.vue'
 
 <style scoped>
 .now-playing-main {
-  width: 32vw;
+  height: 100vh;
+  position: absolute;
 }
 .now-playing-title {
   margin: 20px 0px 0px 0px;

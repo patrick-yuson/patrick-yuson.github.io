@@ -16,6 +16,9 @@ a,
   overflow-y: scroll;
   max-height: 100vh;
 }
+.hide-scroll::-webkit-scrollbar {
+  display: none;
+}
 .h2 {
   font-size: var(--font-size-h2);
 }
@@ -36,10 +39,10 @@ a,
 }
 
 @media (min-width: 1024px) {
-  body {
+  /* body {
     display: flex;
     place-items: center;
-  }
+  } */
 
   /* #app {
     display: grid;

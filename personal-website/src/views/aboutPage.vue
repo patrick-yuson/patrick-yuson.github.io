@@ -13,16 +13,17 @@ const navbarToggled = ref(false)
       <navbarComponent v-model="navbarToggled" />
       <centerComponent :navbarHidden="navbarToggled" />
     </div>
-    <nowPlaying />
+    <div class="now-playing">
+      <nowPlaying />
+    </div>
   </div>
 </template>
 
 <style scoped>
 .about-main {
   display: flex;
-  gap: 5px;
   justify-content: space-between;
-  width: 100vw;
+  width: 100%;
 }
 .left {
   display: flex;
@@ -30,7 +31,7 @@ const navbarToggled = ref(false)
   gap: 5px;
   width: 100%;
 }
-.placeholder {
-  margin-top: 10px;
+.now-playing {
+  width: 34vw;
 }
 </style>

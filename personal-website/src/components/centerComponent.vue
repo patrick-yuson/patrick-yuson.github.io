@@ -8,18 +8,15 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="center-main component no-padding" :class="{ full: navbarToggled === false }">
+  <div class="center-main component no-padding hide-scroll" :class="{ full: navbarToggled === false }">
     <profileComponent />
   </div>
 </template>
 
 <style scoped>
 .center-main {
-  width: 50%;
-  height: 100vh;
-}
-.full {
   width: 100%;
+  height: 100vh;
 }
 .no-padding {
   padding: 0px;

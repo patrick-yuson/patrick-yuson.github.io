@@ -1,6 +1,8 @@
 <script setup>
 import iconElement from './iconElement.vue'
 import centerSectionElement from './centerSectionElement.vue';
+import songRowElement from './songRowElement.vue';
+
 const icons = [
   {
     id: 1,
@@ -49,10 +51,10 @@ function redirectToUrl(url) {
         class="clickable"
       />
     </div>
-    <centerSectionElement header="Experience">
+    <centerSectionElement header="Experiences">
       <template #content>
       <!-- TODO: put list of "songs" -->
-        <div>Hello World</div>
+        <songRowElement />
       </template>
     </centerSectionElement>
   </div>
@@ -92,7 +94,7 @@ function redirectToUrl(url) {
 .profile-socials {
   display: flex;  
   flex-direction: row;
-  height: 10vh;
+  height: 100%;
   width: 100%;
   margin: 20px 0px 0px 1.5%;
 }
