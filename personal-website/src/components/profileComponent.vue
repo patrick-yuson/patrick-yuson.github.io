@@ -1,18 +1,15 @@
 <script setup>
 import { ref } from 'vue'
+import { useSongEventsHandler } from '@/composables/songEventsHandler'
 import iconElement from './iconElement.vue'
 import centerSectionElement from './centerSectionElement.vue'
 import songRowElement from './songRowElement.vue'
-import profileData from '../assets/profileData.json'
+import songData from '../assets/songData.json'
 
-const data = ref(JSON.parse(JSON.stringify(profileData)))
+const { currentSong, setCurrentSong, songs } = useSongEventsHandler()
+
+const data = ref(JSON.parse(JSON.stringify(songData)))
 const icons = data.value.socials
-const experiences = data.value.experiences
-
-const currentID = ref(null)
-const setCurrent = (id) => {
-  currentID.value = currentID.value === id ? currentID.value : id
-}
 
 function redirectToUrl(url) {
   window.open(url, '_blank')
@@ -38,7 +35,7 @@ function redirectToUrl(url) {
     </div>
     <centerSectionElement header="Experiences">
       <template #content>
-        <div class="profile-song-row" v-for="exp in experiences" :key="exp.id">
+        <div class="profile-song-row" v-for="exp in songs" :key="exp.id">
           <songRowElement
             :left="exp.id"
             :albumCover="exp.album_cover"
@@ -46,8 +43,8 @@ function redirectToUrl(url) {
             :artist="exp.artist"
             :location="exp.location"
             :duration="exp.duration"
-            v-model="currentID"
-            @click="setCurrent(exp.id)"
+            v-model="currentSong"
+            @click="setCurrentSong(exp)"
           />
         </div>
       </template>

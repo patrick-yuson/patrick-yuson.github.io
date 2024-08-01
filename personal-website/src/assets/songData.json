@@ -1,0 +1,62 @@
+{
+  "songs": [
+    {
+      "id": 1,
+      "title": "Frontend Engineering Intern",
+      "artist": "Lumin",
+      "duration": "June 2024-August 2024",
+      "location": "Charlottesville, VA",
+      "album_cover": "https://static.wixstatic.com/media/bf0fd5_b8a2e928e311438b8533f99592a3994b~mv2.png/v1/fill/w_560,h_556,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Sun%20tribe.png",
+      "details": [
+        {
+          "id": 1,
+          "type": "card",
+          "header": "My Task",
+          "description": "With a cohort of two other interns, I was tasked to build an application for Customer Support that used company data sources to provide context about Lumin's devices in a way that is efficient and digestible"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Launch Program Participant",
+      "artist": "Forge",
+      "duration": "January 2024-June 2024",
+      "location": "Remote",
+      "album_cover": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-1/346862740_1499841487217426_1381363938242773733_n.png?stp=dst-png_p480x480&_nc_cat=102&ccb=1-7&_nc_sid=f4b9fd&_nc_ohc=lUy4es7fBekQ7kNvgHtwVbg&_nc_ht=scontent-iad3-1.xx&gid=Annbu34HRT9F06yBhcopfr0&oh=00_AYDvRUaGBhC-bgTXo6SICy7totqUtmkAQjvHYRAEqIUqHw&oe=66B07F28"
+    },
+    {
+      "id": 3,
+      "title": "Marketing Intern",
+      "artist": "FilExcellence",
+      "duration": "July 2023-August 2023",
+      "location": "Remote",
+      "album_cover": "https://static.wixstatic.com/media/a682a3_f932c999f7754d888816b56ef1d0ae6d~mv2.png/v1/crop/x_0,y_0,w_636,h_636,q_90,enc_auto/a682a3_f932c999f7754d888816b56ef1d0ae6d~mv2.png"
+    }
+  ],
+  "socials": [
+    {
+      "id": 1,
+      "name": "LinkedIn",
+      "src": "https://www.svgrepo.com/show/452051/linkedin.svg",
+      "redirect": "https://www.linkedin.com/in/patrickyuson/"
+    },
+    {
+      "id": 2,
+      "name": "GitHub",
+      "src": "https://www.svgrepo.com/show/452211/github.svg",
+      "redirect": "https://github.com/patrick-yuson"
+    },
+    {
+      "id": 3,
+      "name": "Instagram",
+      "src": "https://www.svgrepo.com/show/452231/instagram.svg",
+      "redirect": "https://www.instagram.com/patrickyuson/"
+    },
+    {
+      "id": 4,
+      "name": "Facebook",
+      "src": "https://www.svgrepo.com/show/452197/facebook.svg",
+      "redirect": "https://www.facebook.com/patrick.yuson.148"
+    }
+  ]
+}

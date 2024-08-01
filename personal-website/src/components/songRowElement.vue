@@ -9,11 +9,11 @@ const title = defineModel('title', { default: null, type: [String, null] })
 const artist = defineModel('artist', { default: null, type: [String, null] })
 const location = defineModel('location', { default: null, type: [String, null] })
 const duration = defineModel('duration', { default: null, type: [String, null] })
-const currentID = defineModel()
+const currentSong = defineModel()
 
 const emits = defineEmits(['click'])
 const isClicked = computed(() => {
-  return currentID.value === left.value
+  return currentSong.value.id === left.value
 })
 
 const isHovering = ref(false)
