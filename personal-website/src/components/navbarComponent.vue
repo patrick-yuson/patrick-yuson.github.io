@@ -39,7 +39,7 @@ const handleMetaLeftClick = () => {
   width: 65px;
 }
 .showing {
-  width: 300px;
+  min-width: 300px;
 }
 .hidden {
   width: 100%;

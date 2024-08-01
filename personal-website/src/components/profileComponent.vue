@@ -1,13 +1,18 @@
 <script setup>
 import { ref } from 'vue'
 import iconElement from './iconElement.vue'
-import centerSectionElement from './centerSectionElement.vue';
-import songRowElement from './songRowElement.vue';
+import centerSectionElement from './centerSectionElement.vue'
+import songRowElement from './songRowElement.vue'
 import profileData from '../assets/profileData.json'
 
 const data = ref(JSON.parse(JSON.stringify(profileData)))
 const icons = data.value.socials
 const experiences = data.value.experiences
+
+const currentID = ref(null)
+const setCurrent = (id) => {
+  currentID.value = currentID.value === id ? currentID.value : id
+}
 
 function redirectToUrl(url) {
   window.open(url, '_blank')
@@ -33,17 +38,16 @@ function redirectToUrl(url) {
     </div>
     <centerSectionElement header="Experiences">
       <template #content>
-        <div class="profile-song-row" 
-          v-for="exp in experiences"
-          :key="exp.id"
-        >
-          <songRowElement 
+        <div class="profile-song-row" v-for="exp in experiences" :key="exp.id">
+          <songRowElement
             :left="exp.id"
             :albumCover="exp.album_cover"
             :title="exp.title"
             :artist="exp.artist"
             :location="exp.location"
             :duration="exp.duration"
+            v-model="currentID"
+            @click="setCurrent(exp.id)"
           />
         </div>
       </template>
@@ -61,7 +65,7 @@ function redirectToUrl(url) {
   overflow: hidden; /* Ensure the pseudo-element stays within bounds */
 }
 .profile-header-card::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -87,9 +91,10 @@ function redirectToUrl(url) {
 }
 .profile-song-row:hover {
   background-color: var(--hh-c-brown-lightest);
+  cursor: pointer;
 }
 .profile-socials {
-  display: flex;  
+  display: flex;
   flex-direction: row;
   height: 100%;
   width: 100%;
