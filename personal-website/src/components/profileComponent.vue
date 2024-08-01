@@ -1,34 +1,14 @@
 <script setup>
+import { ref } from 'vue'
 import iconElement from './iconElement.vue'
 import centerSectionElement from './centerSectionElement.vue';
 import songRowElement from './songRowElement.vue';
+import profileData from '../assets/profileData.json'
 
-const icons = [
-  {
-    id: 1,
-    name: 'LinkedIn',
-    src: 'https://www.svgrepo.com/show/452051/linkedin.svg',
-    redirect: 'https://www.linkedin.com/in/patrickyuson/'
-  },
-  {
-    id: 2,
-    name: 'GitHub',
-    src: 'https://www.svgrepo.com/show/452211/github.svg',
-    redirect: 'https://github.com/patrick-yuson'
-  },
-  {
-    id: 3,
-    name: 'Instagram',
-    src: 'https://www.svgrepo.com/show/452231/instagram.svg',
-    redirect: 'https://www.instagram.com/patrickyuson/'
-  },
-  {
-    id: 4,
-    name: 'Facebook',
-    src: 'https://www.svgrepo.com/show/452197/facebook.svg',
-    redirect: 'https://www.facebook.com/patrick.yuson.148'
-  }
-]
+const data = ref(JSON.parse(JSON.stringify(profileData)))
+const icons = data.value.socials
+const experiences = data.value.experiences
+
 function redirectToUrl(url) {
   window.open(url, '_blank')
 }
@@ -53,8 +33,19 @@ function redirectToUrl(url) {
     </div>
     <centerSectionElement header="Experiences">
       <template #content>
-      <!-- TODO: put list of "songs" -->
-        <songRowElement />
+        <div class="profile-song-row" 
+          v-for="exp in experiences"
+          :key="exp.id"
+        >
+          <songRowElement 
+            :left="exp.id"
+            :albumCover="exp.album_cover"
+            :title="exp.title"
+            :artist="exp.artist"
+            :location="exp.location"
+            :duration="exp.duration"
+          />
+        </div>
       </template>
     </centerSectionElement>
   </div>
@@ -69,7 +60,6 @@ function redirectToUrl(url) {
   background-position: 50% 20%;
   overflow: hidden; /* Ensure the pseudo-element stays within bounds */
 }
-
 .profile-header-card::before {
   content: "";
   position: absolute;
@@ -90,6 +80,13 @@ function redirectToUrl(url) {
   left: 20px;
   font-size: 75px;
   font-weight: bold;
+}
+.profile-song-row {
+  padding: 4px;
+  border-radius: var(--border-radius-album);
+}
+.profile-song-row:hover {
+  background-color: var(--hh-c-brown-lightest);
 }
 .profile-socials {
   display: flex;  

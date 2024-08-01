@@ -27,7 +27,6 @@ import cardElement from "./cardElement.vue";
 <style scoped>
 .now-playing-main {
   height: 100vh;
-  position: absolute;
 }
 .now-playing-title {
   margin: 20px 0px 0px 0px;

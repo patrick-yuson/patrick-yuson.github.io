@@ -1,10 +1,11 @@
 <script setup>
 const src = defineModel('src', { default: null, type: [String, null] })
+const forRow = defineModel('forRow', { default: false, type: [Boolean, null] })
 </script>
 
 <template>
-  <div class="album-cover-main">
-    <img class="album-cover-img" :src="src" />
+  <div class="album-cover-main" >
+    <img class="album-cover-img" :src="src" :class="{ 'for-row': forRow }"/>
   </div>
 </template>
 
@@ -17,5 +18,9 @@ const src = defineModel('src', { default: null, type: [String, null] })
   height: 100%;
   width: 100%;
   border-radius: var(--border-radius-album);
+}
+.for-row {
+  height: 60px;
+  width: 60px;
 }
 </style>
