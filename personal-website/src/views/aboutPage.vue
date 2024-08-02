@@ -33,5 +33,6 @@ const navbarToggled = ref(false)
 }
 .now-playing {
   width: 30vw;
+  min-width: 300px;
 }
 </style>

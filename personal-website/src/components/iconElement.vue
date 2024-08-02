@@ -38,6 +38,7 @@ const width = defineModel('width', { default: null, type: [String, null] })
 }
 .img {
   transition: transform 0.3s ease;
+  border-radius: 50px;
 }
 .img:hover {
   transform: scale(1.1);

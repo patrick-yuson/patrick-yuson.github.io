@@ -11,8 +11,38 @@
         {
           "id": 1,
           "type": "card",
+          "subType": "plaintext",
           "header": "My Task",
           "description": "With a cohort of two other interns, I was tasked to build an application for Customer Support that used company data sources to provide context about Lumin's devices in a way that is efficient and digestible"
+        },
+        {
+          "id": 2,
+          "type": "card",
+          "subType": "iconArray",
+          "header": "Skills Learned",
+          "icons": [
+            {
+              "id": 1,
+              "name": "Vue.js",
+              "src": "https://repository-images.githubusercontent.com/106262467/4cbe6700-41c9-11ea-8860-57668b5a0ec2"
+            },
+            {
+              "id": 2,
+              "name": "Graylog",
+              "src": "https://static-00.iconduck.com/assets.00/graylog-icon-2048x1980-ebfbdmv3.png"
+            },
+            {
+              "id": 3,
+              "name": "Mender",
+              "src": "https://avatars.githubusercontent.com/u/15040539?s=280&v=4"
+            },
+            {
+              "id": 4,
+              "name": "Lumin API",
+              "src": "https://avatars.githubusercontent.com/u/34658336?s=280&v=4"
+            }
+          ],
+          "description": "Vue.js, Graylog, Mender, Lumin API"
         }
       ]
     },

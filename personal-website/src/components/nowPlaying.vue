@@ -2,25 +2,41 @@
 import headerElement from './headerElement.vue'
 import albumCoverElement from './albumCoverElement.vue'
 import cardElement from './cardElement.vue'
+import iconElement from './iconElement.vue'
+import { useSongEventsHandler } from '@/composables/songEventsHandler'
+
+const { currentSong } = useSongEventsHandler()
 </script>
 
 <template>
   <div class="now-playing-main component">
     <headerElement name="Now Playing" size="h3" weight="bold" />
     <albumCoverElement
-      src="https://static.wixstatic.com/media/bf0fd5_b8a2e928e311438b8533f99592a3994b~mv2.png/v1/fill/w_560,h_556,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Sun%20tribe.png"
+      v-if="currentSong.album_cover"
+      class="now-playing-album"
+      :src="currentSong.album_cover"
     />
-    <div class="now-playing-title">Frontend Engineering Intern</div>
-    <div class="now-playing-artist">Lumin Smart Panel</div>
-    <cardElement header="My Task">
-      <template #content>
-        <div class="">
-          With a cohort of two other interns, I was tasked to build an application for Customer
-          Support that used company data sources to provide context about Lumin's devices in a way
-          that is efficient and digestible
-        </div>
-      </template>
-    </cardElement>
+    <div class="now-playing-title">{{ currentSong.title }}</div>
+    <div class="now-playing-artist">{{ currentSong.artist }}</div>
+    <div v-for="item in currentSong.details" :key="item.id">
+      <cardElement v-if="item.type === 'card'" :header="item.header">
+        <template #content>
+          <div v-if="item.subType === 'plaintext'">
+            {{ item.description }}
+          </div>
+          <div class="icon-array" v-else-if="item.subType === 'iconArray'">
+            <div class="icon-row">
+              <div v-for="icon in item.icons" :key="icon.id" class="icon-wrapper">
+                <div class="icon-and-caption">
+                  <iconElement :src="icon.src" :height="'60px'" :width="'60px'" />
+                  <div class="caption">{{ icon.name }}</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </template>
+      </cardElement>
+    </div>
   </div>
 </template>
 
@@ -37,8 +53,29 @@ import cardElement from './cardElement.vue'
   margin: 5px 0px 0px 0px;
   font-size: 18px;
 }
-.now-playing-about {
-  height: 500px;
+.now-playing-album {
+  height: 400px;
+  width: 400px;
+}
+.icon-wrapper {
+  height: 60px;
+  width: 60px;
+}
+.icon-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100px;
+}
+.icon-and-caption {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: var(--font-size-caption);
   width: 100%;
+  align-items: center;
+}
+.caption {
+  text-align: center;
 }
 </style>

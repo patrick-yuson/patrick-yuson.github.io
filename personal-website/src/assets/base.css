@@ -21,6 +21,7 @@
   --vt-c-text-dark-1: var(--vt-c-white);
   --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
 
+  --font-size-caption: 14px;
   --font-size-body: 16px;
   --font-size-h4: 18px;
   --font-size-h3: 20px;
