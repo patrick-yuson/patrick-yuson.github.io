@@ -13,6 +13,7 @@
           "type": "card",
           "subType": "plaintext",
           "header": "My Task",
+          "header_src": null,
           "description": "With a cohort of two other interns, I was tasked to build an application for Customer Support that used company data sources to provide context about Lumin's devices in a way that is efficient and digestible"
         },
         {
@@ -20,6 +21,7 @@
           "type": "card",
           "subType": "iconArray",
           "header": "Skills Learned",
+          "header_src": null,
           "icons": [
             {
               "id": 1,
@@ -43,6 +45,14 @@
             }
           ],
           "description": "Vue.js, Graylog, Mender, Lumin API"
+        },
+        {
+          "id": 3,
+          "type": "card",
+          "subType": "header-photo-plaintext",
+          "header": "About the Artist",
+          "description": "Description",
+          "header_src": "https://mma.prnewswire.com/media/1231675/Lumin_Microgrid.jpg?p=twitter"
         }
       ]
     },

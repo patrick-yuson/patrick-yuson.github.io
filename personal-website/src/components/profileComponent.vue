@@ -59,7 +59,7 @@ function redirectToUrl(url) {
   width: 100%;
   background-size: cover;
   background-position: 50% 20%;
-  overflow: hidden; /* Ensure the pseudo-element stays within bounds */
+  overflow: hidden;
 }
 .profile-header-card::before {
   content: '';

@@ -19,7 +19,7 @@ const { currentSong } = useSongEventsHandler()
     <div class="now-playing-title">{{ currentSong.title }}</div>
     <div class="now-playing-artist">{{ currentSong.artist }}</div>
     <div v-for="item in currentSong.details" :key="item.id">
-      <cardElement v-if="item.type === 'card'" :header="item.header">
+      <cardElement v-if="item.type === 'card'" :header="item.header" :headerImg="item.header_src">
         <template #content>
           <div v-if="item.subType === 'plaintext'">
             {{ item.description }}
@@ -33,6 +33,9 @@ const { currentSong } = useSongEventsHandler()
                 </div>
               </div>
             </div>
+          </div>
+          <div v-else-if="item.subType === 'header-photo-plaintext'">
+            {{ item.description }}
           </div>
         </template>
       </cardElement>
