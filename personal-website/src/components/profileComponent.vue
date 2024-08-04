@@ -5,15 +5,13 @@ import iconElement from './iconElement.vue'
 import centerSectionElement from './centerSectionElement.vue'
 import songRowElement from './songRowElement.vue'
 import songData from '../assets/songData.json'
+import { useRedirect } from '@/composables/useRedirect'
 
 const { currentSong, setCurrentSong, songs } = useSongEventsHandler()
+const { redirectToUrl } = useRedirect()
 
 const data = ref(JSON.parse(JSON.stringify(songData)))
 const icons = data.value.socials
-
-function redirectToUrl(url) {
-  window.open(url, '_blank')
-}
 </script>
 
 <template>

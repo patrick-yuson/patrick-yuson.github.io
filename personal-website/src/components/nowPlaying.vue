@@ -4,8 +4,10 @@ import albumCoverElement from './albumCoverElement.vue'
 import cardElement from './cardElement.vue'
 import iconElement from './iconElement.vue'
 import { useSongEventsHandler } from '@/composables/songEventsHandler'
+import { useRedirect } from '@/composables/useRedirect'
 
 const { currentSong } = useSongEventsHandler()
+const { redirectToUrl } = useRedirect()
 </script>
 
 <template>
@@ -35,7 +37,8 @@ const { currentSong } = useSongEventsHandler()
             </div>
           </div>
           <div v-else-if="item.subType === 'header-photo-plaintext'">
-            {{ item.description }}
+            <div :class="{ 'space-bottom': item.website !== null }">{{ item.description }}</div>
+            <div class="url" @click="redirectToUrl(item.website)">Check out their website!</div>
           </div>
         </template>
       </cardElement>
@@ -43,7 +46,7 @@ const { currentSong } = useSongEventsHandler()
   </div>
 </template>
 
-<style scoped>
+<style>
 .now-playing-main {
   height: 100vh;
 }
@@ -67,8 +70,10 @@ const { currentSong } = useSongEventsHandler()
 .icon-row {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  height: 100px;
+  gap: 32px;
+  overflow-x: scroll;
+  min-height: 115px;
+  padding: 5px;
 }
 .icon-and-caption {
   display: flex;
@@ -80,5 +85,15 @@ const { currentSong } = useSongEventsHandler()
 }
 .caption {
   text-align: center;
+}
+.url {
+  color: var(--hh-c-text-secondary);
+}
+.url:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.space-bottom {
+  margin-bottom: 20px;
 }
 </style>

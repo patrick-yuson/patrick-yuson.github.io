@@ -50,16 +50,15 @@ const content = defineModel('content', { default: null, type: [String, null] })
   padding: 20px 20px 0px 20px;
   font-weight: bold;
 }
-.card-content {
-  padding-top: 20px;
-}
 .card-img-header {
   position: relative;
-  height: 40vh;
+  height: 30vh;
   width: 100%;
   background-size: cover;
   background-position: 50% 30%;
   overflow: hidden;
+  border-radius: var(--border-radius-main) var(--border-radius-main) 0px 0px;
+  margin-bottom: 20px;
 }
 .translucent-overlay {
   position: absolute;
@@ -72,6 +71,7 @@ const content = defineModel('content', { default: null, type: [String, null] })
   align-items: top;
   justify-content: left;
   height: 100%;
+  border-radius: var(--border-radius-main) var(--border-radius-main) 0px 0px;
 }
 /* .card-img-header::before {
   content: '';

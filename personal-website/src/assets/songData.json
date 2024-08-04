@@ -44,7 +44,7 @@
               "src": "https://avatars.githubusercontent.com/u/34658336?s=280&v=4"
             }
           ],
-          "description": "Vue.js, Graylog, Mender, Lumin API"
+          "description": null
         },
         {
           "id": 3,
@@ -52,17 +52,67 @@
           "subType": "header-photo-plaintext",
           "header": "About the Artist",
           "description": "Description",
-          "header_src": "https://mma.prnewswire.com/media/1231675/Lumin_Microgrid.jpg?p=twitter"
+          "header_src": "https://mma.prnewswire.com/media/1231675/Lumin_Microgrid.jpg?p=twitter",
+          "website": "https://www.luminsmart.com/"
         }
       ]
     },
     {
       "id": 2,
-      "title": "Launch Program Participant",
+      "title": "Launch Program",
       "artist": "Forge",
       "duration": "January 2024-June 2024",
       "location": "Remote",
-      "album_cover": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-1/346862740_1499841487217426_1381363938242773733_n.png?stp=dst-png_p480x480&_nc_cat=102&ccb=1-7&_nc_sid=f4b9fd&_nc_ohc=lUy4es7fBekQ7kNvgHtwVbg&_nc_ht=scontent-iad3-1.xx&gid=Annbu34HRT9F06yBhcopfr0&oh=00_AYDvRUaGBhC-bgTXo6SICy7totqUtmkAQjvHYRAEqIUqHw&oe=66B07F28"
+      "album_cover": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-1/346862740_1499841487217426_1381363938242773733_n.png?stp=dst-png_p480x480&_nc_cat=102&ccb=1-7&_nc_sid=f4b9fd&_nc_ohc=lUy4es7fBekQ7kNvgHtwVbg&_nc_ht=scontent-iad3-1.xx&gid=Annbu34HRT9F06yBhcopfr0&oh=00_AYDvRUaGBhC-bgTXo6SICy7totqUtmkAQjvHYRAEqIUqHw&oe=66B07F28",
+      "details": [
+        {
+          "id": 1,
+          "type": "card",
+          "subType": "plaintext",
+          "header": "About the Experience",
+          "header_src": null,
+          "description": "Sharpened component-based web application development skills through various lectures and projects over the course of 6 months. At the end of the program during a three-week summer training period, worked on one web application each week with four other group members to create functional, polished, and engaging applications with database and API integration."
+        },
+        {
+          "id": 2,
+          "type": "card",
+          "subType": "iconArray",
+          "header": "Skills Learned",
+          "header_src": null,
+          "icons": [
+            {
+              "id": 1,
+              "name": "React.js",
+              "src": "https://static-00.iconduck.com/assets.00/react-icon-1024x1024-wwxwlds8.png"
+            },
+            {
+              "id": 2,
+              "name": "CSS",
+              "src": "https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_960_720.png"
+            },
+            {
+              "id": 3,
+              "name": "Google Firestore",
+              "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0vSgXSgZl4RMEquy92rfaDxXfwPGVlVpHPg&s"
+            },
+            {
+              "id": 4,
+              "name": "Express.js",
+              "src": "https://banner2.cleanpng.com/20180711/yfe/aawnyv4jx.webp"
+            }
+          ],
+          "description": null
+        },
+        {
+          "id": 4,
+          "type": "card",
+          "subType": "header-photo-plaintext",
+          "header": "About the Artist",
+          "description": "Forge's mission is to empower and connect students with the skills and opportunities they need to thrive in their early careers, while also serving as a strategic partner for companies in building a diverse and exceptional talent pipeline.",
+          "header_src": "https://optim.tildacdn.com/tild3763-6432-4161-a134-303265333165/-/format/webp/Frame_4.png",
+          "website": "https://joinforge.co/"
+        }
+      ]
     },
     {
       "id": 3,
