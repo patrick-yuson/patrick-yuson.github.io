@@ -55,7 +55,7 @@ const content = defineModel('content', { default: null, type: [String, null] })
   height: 30vh;
   width: 100%;
   background-size: cover;
-  background-position: 50% 30%;
+  background-position: 50% 50%;
   overflow: hidden;
   border-radius: var(--border-radius-main) var(--border-radius-main) 0px 0px;
   margin-bottom: 20px;

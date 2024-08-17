@@ -51,7 +51,7 @@
           "type": "card",
           "subType": "header-photo-plaintext",
           "header": "About the Artist",
-          "description": "Description",
+          "description": "Lumin is a smart panel company driven by its goal for homeowners to be able to control their home energy consumption in a way that is simple, efficient, and adaptive. ",
           "header_src": "https://mma.prnewswire.com/media/1231675/Lumin_Microgrid.jpg?p=twitter",
           "website": "https://www.luminsmart.com/"
         }
@@ -71,7 +71,7 @@
           "subType": "plaintext",
           "header": "About the Experience",
           "header_src": null,
-          "description": "Sharpened component-based web application development skills through various lectures and projects over the course of 6 months. At the end of the program during a three-week summer training period, worked on one web application each week with four other group members to create functional, polished, and engaging applications with database and API integration."
+          "description": "Over the course of 6 months, I sharpened my component-based web application development skills through various lectures and projects. At the end of the program during a three-week summer training period, I worked on one web application each week with four other group members to create functional, polished, and engaging applications with database and API integration."
         },
         {
           "id": 2,
@@ -120,7 +120,26 @@
       "artist": "FilExcellence",
       "duration": "July 2023-August 2023",
       "location": "Remote",
-      "album_cover": "https://static.wixstatic.com/media/a682a3_f932c999f7754d888816b56ef1d0ae6d~mv2.png/v1/crop/x_0,y_0,w_636,h_636,q_90,enc_auto/a682a3_f932c999f7754d888816b56ef1d0ae6d~mv2.png"
+      "album_cover": "https://static.wixstatic.com/media/a682a3_f932c999f7754d888816b56ef1d0ae6d~mv2.png/v1/crop/x_0,y_0,w_636,h_636,q_90,enc_auto/a682a3_f932c999f7754d888816b56ef1d0ae6d~mv2.png",
+      "details": [
+        {
+          "id": 1,
+          "type": "card",
+          "subType": "plaintext",
+          "header": "About the Experience",
+          "header_src": null,
+          "description": "I used Wix Website Editor to increase website traffic from an average of 60 sessions/month to over 1,050/month by completely redesigning their website and accommodating for a new brand direction. Additionally, I incorporated more engaging elements such as various animations, moving collages, and interactive photos to boost engagement"
+        },
+        {
+          "id": 2,
+          "type": "card",
+          "subType": "header-photo-plaintext",
+          "header": "About the Artist",
+          "header_src": "https://static.wixstatic.com/media/a682a3_a31908a0b9d948ef9e235d38d36c7097~mv2.png/v1/fit/w_1756,h_1198,q_90/a682a3_a31908a0b9d948ef9e235d38d36c7097~mv2.webp",
+          "description": "FilExcellence is a 501(c)(3) Non-profit organization dedicated to uplifting and empowering Filipinos around the globe through means of mentorship, fundraising, and event programming",
+          "website": "https://www.filexcellence.com/"
+        }
+      ]
     }
   ],
   "socials": [
