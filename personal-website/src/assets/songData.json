@@ -30,12 +30,12 @@
             },
             {
               "id": 2,
-              "name": "Graylog",
-              "src": "https://static-00.iconduck.com/assets.00/graylog-icon-2048x1980-ebfbdmv3.png"
+              "name": "Graylog API",
+              "src": "https://d6d4ismr40iw.cloudfront.net/event%2F7d8313a9-c8c1-4971-87ab-e3f59bcc6581%2Fresources%2FCR7yE4WaROmFEJg5f6Uy_gl%20logo%20icon%20full%20color%20800w_WHITEback.png"
             },
             {
               "id": 3,
-              "name": "Mender",
+              "name": "Mender API",
               "src": "https://avatars.githubusercontent.com/u/15040539?s=280&v=4"
             },
             {
@@ -63,7 +63,7 @@
       "artist": "Forge",
       "duration": "January 2024-June 2024",
       "location": "Remote",
-      "album_cover": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-1/346862740_1499841487217426_1381363938242773733_n.png?stp=dst-png_p480x480&_nc_cat=102&ccb=1-7&_nc_sid=f4b9fd&_nc_ohc=lUy4es7fBekQ7kNvgHtwVbg&_nc_ht=scontent-iad3-1.xx&gid=Annbu34HRT9F06yBhcopfr0&oh=00_AYDvRUaGBhC-bgTXo6SICy7totqUtmkAQjvHYRAEqIUqHw&oe=66B07F28",
+      "album_cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv8JLhJoTJq11PRwuZ4jFI_yhF5Ip0bfkepA&s",
       "details": [
         {
           "id": 1,
@@ -83,7 +83,7 @@
             {
               "id": 1,
               "name": "React.js",
-              "src": "https://static-00.iconduck.com/assets.00/react-icon-1024x1024-wwxwlds8.png"
+              "src": "https://external-preview.redd.it/ZTKVCne_ZlanhjrqBm4x7_-TLSAsvqukF6oAB3y8ZAI.jpg?width=640&crop=smart&auto=webp&s=fa3b24c6880d8626b13fc115bbefb36cb5cd006c"
             },
             {
               "id": 2,

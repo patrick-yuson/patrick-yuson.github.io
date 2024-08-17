@@ -10,7 +10,7 @@ const handleMetaLeftClick = () => {
 </script>
 
 <template>
-  <div class="navbar-main component" :class="{ 'showing': showingNav }">
+  <div class="navbar-main component" :class="{ showing: showingNav }">
     <div class="navbar-showing" v-if="showingNav">
       <headerElement
         size="h3"
@@ -21,6 +21,12 @@ const handleMetaLeftClick = () => {
         color="grey"
         @clicked-meta-left="handleMetaLeftClick"
       />
+      <div>
+        <img
+          src="http://textfiles.com/underconstruction/CoCollegeParkQuad2406Construction2.gif"
+          width="100%"
+        />
+      </div>
     </div>
     <div class="navbar-hidden" v-else>
       <iconElement

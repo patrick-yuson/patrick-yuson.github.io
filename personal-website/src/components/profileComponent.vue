@@ -66,9 +66,9 @@ const icons = data.value.socials
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('https://i.scdn.co/image/ab67618600001016f0f7c27f520117bc06b69f45');
+  background-image: url('../assets/personal_website_cover.JPG');
   background-size: cover;
-  background-position: 50% 20%;
+  background-position: 80% 75%;
   filter: brightness(85%);
   z-index: 1;
 }
