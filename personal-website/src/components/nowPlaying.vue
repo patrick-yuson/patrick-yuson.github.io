@@ -60,8 +60,8 @@ const { redirectToUrl } = useRedirect()
   font-size: 18px;
 }
 .now-playing-album {
-  height: 400px;
-  width: 400px;
+  height: 318px;
+  width: 318px;
 }
 .icon-wrapper {
   height: 60px;

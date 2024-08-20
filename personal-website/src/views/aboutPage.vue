@@ -22,17 +22,16 @@ const navbarToggled = ref(false)
 <style scoped>
 .about-main {
   display: flex;
-  justify-content: space-between;
   width: 100%;
 }
 .left {
   display: flex;
   flex-direction: row;
   gap: 5px;
-  width: 70vw;
+  width: 75vw;
 }
 .now-playing {
-  width: 30vw;
+  width: 25vw;
   min-width: 300px;
 }
 </style>

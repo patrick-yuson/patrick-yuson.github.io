@@ -76,6 +76,7 @@ const isHovering = ref(false)
 }
 .song-row-title {
   font-size: var(--font-size-h4);
+  font-weight: bold;
   margin-bottom: 5px;
 }
 .song-row-artist {

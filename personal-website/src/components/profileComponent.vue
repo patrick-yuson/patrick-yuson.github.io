@@ -47,6 +47,11 @@ const icons = data.value.socials
         </div>
       </template>
     </centerSectionElement>
+    <centerSectionElement header="Projects">
+      <template #content>
+        <div>Hello World</div>
+      </template>
+    </centerSectionElement>
   </div>
 </template>
 
@@ -68,7 +73,7 @@ const icons = data.value.socials
   bottom: 0;
   background-image: url('../assets/personal_website_cover.JPG');
   background-size: cover;
-  background-position: 80% 75%;
+  background-position: 80% 73%;
   filter: brightness(85%);
   z-index: 1;
 }
