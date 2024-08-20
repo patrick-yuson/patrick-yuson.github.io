@@ -167,5 +167,17 @@
       "src": "https://www.svgrepo.com/show/452197/facebook.svg",
       "redirect": "https://www.facebook.com/patrick.yuson.148"
     }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "name": "ML4VA Project",
+      "src": "../assets/ML4VA_Image.png"
+    },
+    {
+      "id": 2,
+      "name": "Tutoring Web Application",
+      "src": "insert_path_or_url"
+    }
   ]
 }

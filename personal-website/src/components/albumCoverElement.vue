@@ -4,8 +4,8 @@ const forRow = defineModel('forRow', { default: false, type: [Boolean, null] })
 </script>
 
 <template>
-  <div class="album-cover-main" >
-    <img class="album-cover-img" :src="src" :class="{ 'for-row': forRow }"/>
+  <div class="album-cover-main">
+    <img class="album-cover-img" :src="src" :class="{ 'for-row': forRow }" />
   </div>
 </template>
 

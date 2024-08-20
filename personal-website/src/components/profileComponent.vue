@@ -4,6 +4,7 @@ import { useSongEventsHandler } from '@/composables/songEventsHandler'
 import iconElement from './iconElement.vue'
 import centerSectionElement from './centerSectionElement.vue'
 import songRowElement from './songRowElement.vue'
+import albumRowElement from './albumRowElement.vue'
 import songData from '../assets/songData.json'
 import { useRedirect } from '@/composables/useRedirect'
 
@@ -49,7 +50,7 @@ const icons = data.value.socials
     </centerSectionElement>
     <centerSectionElement header="Projects">
       <template #content>
-        <div>Hello World</div>
+        <albumRowElement :albums="songData.projects" />
       </template>
     </centerSectionElement>
   </div>
