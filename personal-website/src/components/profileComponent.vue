@@ -57,6 +57,9 @@ const icons = data.value.socials
 </template>
 
 <style scoped>
+.profile-main {
+  width: 100%;
+}
 .profile-header-card {
   position: relative;
   height: 40vh;
@@ -98,7 +101,6 @@ const icons = data.value.socials
   display: flex;
   flex-direction: row;
   height: 100%;
-  width: 100%;
   margin: 20px 0px 0px 1.5%;
 }
 .clickable:hover {

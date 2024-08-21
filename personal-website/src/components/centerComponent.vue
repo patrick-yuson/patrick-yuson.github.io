@@ -8,7 +8,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="center-main component no-padding hide-scroll" :class="{ full: navbarToggled === false }">
+  <div class="center-main component no-padding" :class="{ full: navbarToggled === false }">
     <profileComponent />
   </div>
 </template>

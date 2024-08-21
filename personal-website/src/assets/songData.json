@@ -171,13 +171,21 @@
   "projects": [
     {
       "id": 1,
-      "name": "ML4VA Project",
-      "src": "../assets/ML4VA_Image.png"
+      "name": "Rory.io",
+      "subheader": "A Lumin Support Portal",
+      "src": "../assets/Rory.io_System_Details.png"
     },
     {
       "id": 2,
+      "name": "ML4VA Project",
+      "subheader": "CS 4774",
+      "src": "../assets/ML4VA_Image.png"
+    },
+    {
+      "id": 3,
       "name": "Tutoring Web Application",
-      "src": "insert_path_or_url"
+      "subheader": "CS 3240",
+      "src": "https://news.virginia.edu/sites/default/files/article_image/institutional_announcement_ss_header.jpg"
     }
   ]
 }
