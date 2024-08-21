@@ -8,17 +8,19 @@ const albums = defineModel('albums', { default: null, type: [Array, null] })
   <div class="album-row-main">
     <div class="album-row-flex">
       <div v-for="album in albums" :key="album.id">
-        <div class="album-and-name">
-          <div class="album-row-album-cover">
-            <albumCoverElement
-              v-if="album.src"
-              :src="album.src"
-              width="100%"
-              class="album-row-cover"
-            />
+        <div class="album-outer-div">
+          <div class="album-and-name">
+            <div class="album-row-album-cover">
+              <albumCoverElement
+                v-if="album.src"
+                :src="album.src"
+                width="100%"
+                class="album-row-cover"
+              />
+            </div>
+            <div class="album-name">{{ album.name }}</div>
+            <div class="album-subheader">{{ album.subheader }}</div>
           </div>
-          <div class="album-name">{{ album.name }}</div>
-          <div class="album-subheader">{{ album.subheader }}</div>
         </div>
       </div>
     </div>
@@ -37,12 +39,20 @@ const albums = defineModel('albums', { default: null, type: [Array, null] })
   gap: 20px;
   overflow-x: scroll;
 }
+.album-outer-div {
+  padding: 10px;
+}
+.album-outer-div:hover {
+  background-color: var(--hh-c-brown-lightest);
+  border-radius: var(--border-radius-album);
+  cursor: pointer;
+}
 .album-row-cover {
   height: 175px;
   overflow: hidden;
 }
 .album-and-name {
-  max-width: 250px;
+  width: 250px;
 }
 .album-name {
   padding-top: 10px;
