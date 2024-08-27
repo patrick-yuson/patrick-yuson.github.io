@@ -140,6 +140,114 @@
           "website": "https://www.filexcellence.com/"
         }
       ]
+    },
+    {
+      "id": 4,
+      "title": "Student Advisor",
+      "artist": "Organization of Young Filipino Americans (OYFA)",
+      "duration": "March 2024-Present",
+      "location": "Charlottesville, VA",
+      "album_cover": "https://pbs.twimg.com/profile_images/1299847927809167361/8eTFikWf_400x400.jpg",
+      "details": [
+        {
+          "id": 1,
+          "type": "card",
+          "subType": "plaintext",
+          "header": "About the Experience",
+          "header_src": null,
+          "description": "The job of a Student Advisor is to ensure both OYFA's community and leadership feels safe, supported, and uplifted. It is also their role to respond accordingly to any acts of discrimination, harassment, and/or sexual violence within said community."
+        },
+        {
+          "id": 2,
+          "type": "card",
+          "subType": "header-photo-plaintext",
+          "header": "About the Artist",
+          "description": "OYFA is dedicated to uplifting and empowering 300+ members by sharing and celebrating Filipino culture through means of event programming, community building, fundraising, and much more.",
+          "header_src": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-6/343973119_546421047418653_79007179948309694_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=2285d6&_nc_ohc=RSprnIZruwcQ7kNvgEpSXz1&_nc_ht=scontent-iad3-1.xx&oh=00_AYC4iWH0Ee2bLN4R82KrYm1_l_T7JSE0JHtyTqYJfYr0jQ&oe=66CD0550",
+          "website": "https://www.oyfaatuva.com/"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Pan-Asian Council Co-Chair",
+      "artist": "Asian Student Union",
+      "duration": "April 2024-Present",
+      "location": "Charlottesville, VA",
+      "album_cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNKBmv0RJJPqAFjAGVtZX7JrWj3OuLOd-NIA&s",
+      "details": [
+        {
+          "id": 1,
+          "type": "card",
+          "subType": "plaintext",
+          "header": "About the Experience",
+          "header_src": null,
+          "description": "I worked with one other co-chair to lead a coalition of 40+ leaders representing different APISAA student organizations on Grounds and organized monthly roundtables to facilitate fruitful discussion about various topics, foster a caring and watchful environment for leaders to feel well supported, and supervise the scheduling of 150+ events"
+        },
+        {
+          "id": 2,
+          "type": "card",
+          "subType": "header-photo-plaintext",
+          "header": "About the Artist",
+          "description": "The Asian Student Union aims to unite, advocate for, and empower the APISAA community by fostering collaboration among APISAA organizations, providing programming for APISAA students, addressing APISAA concerns at the University, and advocating for APISAA issues. ",
+          "header_src": "https://linktr.ee/og/image/asu.at.uva.jpg",
+          "website": "https://www.instagram.com/asu.at.uva/"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "DEI Committee Member",
+      "artist": "Fourth Year Trustees",
+      "duration": "April 2024-Present",
+      "location": "Charlottesville, VA",
+      "album_cover": "https://www.uva2025.org/favicon.ico",
+      "details": [
+        {
+          "id": 1,
+          "type": "card",
+          "subType": "plaintext",
+          "header": "About the Experience",
+          "header_src": null,
+          "description": "I worked with a committee of five other people to plan, coordinate, and execute events intended to promote diversity, equity, and inclusion at the University of Virginia with 200+ attendees at each event."
+        },
+        {
+          "id": 2,
+          "type": "card",
+          "subType": "header-photo-plaintext",
+          "header": "About the Artist",
+          "description": "Fourth Year Trustees are essentially the Fourth Year Class Council at UVA, who are tasked to identify and program events that include and uplift members of the Fourth Year Class to help foster community and build lasting relations between peers and the University.",
+          "header_src": "https://s3.amazonaws.com/cdn.uvamagazine.org/articles/2007/02-Summer/UniversityDigest/Graduation.jpg",
+          "website": "https://alumni.virginia.edu/students/class-councils-trustees/"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "President",
+      "artist": "Organization of Young Filipino Americans (OYFA)",
+      "duration": "February 2023-April 2024",
+      "location": "Charlottesville, VA",
+      "album_cover": "https://pbs.twimg.com/profile_images/1299847927809167361/8eTFikWf_400x400.jpg",
+      "details": [
+        {
+          "id": 1,
+          "type": "card",
+          "subType": "plaintext",
+          "header": "About the Experience",
+          "header_src": null,
+          "description": "As president, I acted as the face of the organization; established and/or maintained 50+ University and national-scale connections; led Executive Board meetings for a team of six; and facilitated risk management, conflict resolution, and organizational oversight over a team of 30+ people that plan 70+ events throughout the year. "
+        },
+        {
+          "id": 2,
+          "type": "card",
+          "subType": "header-photo-plaintext",
+          "header": "About the Artist",
+          "description": "OYFA is dedicated to uplifting and empowering 300+ members by sharing and celebrating Filipino culture through means of event programming, community building, fundraising, and much more.",
+          "header_src": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-6/343973119_546421047418653_79007179948309694_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=2285d6&_nc_ohc=RSprnIZruwcQ7kNvgEpSXz1&_nc_ht=scontent-iad3-1.xx&oh=00_AYC4iWH0Ee2bLN4R82KrYm1_l_T7JSE0JHtyTqYJfYr0jQ&oe=66CD0550",
+          "website": "https://www.oyfaatuva.com/"
+        }
+      ]
     }
   ],
   "socials": [

@@ -8,7 +8,7 @@ import albumRowElement from './albumRowElement.vue'
 import songData from '../assets/songData.json'
 import { useRedirect } from '@/composables/useRedirect'
 
-const { currentSong, setCurrentSong, songs } = useSongEventsHandler()
+const { currentSong, setCurrentSong, experiences, leadership } = useSongEventsHandler()
 const { redirectToUrl } = useRedirect()
 
 const data = ref(JSON.parse(JSON.stringify(songData)))
@@ -34,7 +34,7 @@ const icons = data.value.socials
     </div>
     <centerSectionElement header="Experiences">
       <template #content>
-        <div class="profile-song-row" v-for="exp in songs" :key="exp.id">
+        <div class="profile-song-row" v-for="exp in experiences" :key="exp.id">
           <songRowElement
             :left="exp.id"
             :albumCover="exp.album_cover"
@@ -51,6 +51,22 @@ const icons = data.value.socials
     <centerSectionElement header="Projects">
       <template #content>
         <albumRowElement :albums="songData.projects" />
+      </template>
+    </centerSectionElement>
+    <centerSectionElement header="Leadership">
+      <template #content>
+        <div class="profile-song-row" v-for="position in leadership" :key="position.id">
+          <songRowElement
+            :left="position.id"
+            :albumCover="position.album_cover"
+            :title="position.title"
+            :artist="position.artist"
+            :location="position.location"
+            :duration="position.duration"
+            v-model="currentSong"
+            @click="setCurrentSong(position)"
+          />
+        </div>
       </template>
     </centerSectionElement>
   </div>
