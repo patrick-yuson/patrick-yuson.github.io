@@ -1,7 +1,6 @@
 <script setup>
 import { ref } from 'vue'
 import { useSongEventsHandler } from '@/composables/songEventsHandler'
-import { useProjectEventsHandler } from '@/composables/projectEventsHandler'
 import iconElement from './iconElement.vue'
 import centerSectionElement from './centerSectionElement.vue'
 import songRowElement from './songRowElement.vue'
@@ -9,7 +8,6 @@ import albumRowElement from './albumRowElement.vue'
 import songData from '../assets/songData.json'
 import { useRedirect } from '@/composables/useRedirect'
 
-const { currentProject } = useProjectEventsHandler()
 const { currentSong, setCurrentSong, experiences, leadership } = useSongEventsHandler()
 const { redirectToUrl } = useRedirect()
 

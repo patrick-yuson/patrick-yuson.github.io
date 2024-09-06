@@ -8,7 +8,6 @@ export const useProjectEventsHandler = () => {
     } else {
       currentProject.value = proj.id
     }
-    console.log(currentProject.value)
   }
   return { currentProject, setCurrentProject }
 }
