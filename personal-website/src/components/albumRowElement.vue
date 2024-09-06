@@ -1,14 +1,16 @@
 <script setup>
 import albumCoverElement from './albumCoverElement.vue'
+import { useProjectEventsHandler } from '@/composables/projectEventsHandler';
 
 const albums = defineModel('albums', { default: null, type: [Array, null] })
+const { setCurrentProject } = useProjectEventsHandler()
 </script>
 
 <template>
   <div class="album-row-main">
     <div class="album-row-flex">
       <div v-for="album in albums" :key="album.id">
-        <div class="album-outer-div">
+        <div class="album-outer-div" @click="setCurrentProject(album)">
           <div class="album-and-name">
             <div class="album-row-album-cover">
               <albumCoverElement
