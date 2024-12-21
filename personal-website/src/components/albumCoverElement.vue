@@ -21,7 +21,6 @@ const assetSrc = computed(() => {
     return null
   }
 })
-// Please
 </script>
 
 <template>
