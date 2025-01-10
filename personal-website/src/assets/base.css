@@ -100,4 +100,10 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow: overlay;
+}
+
+/* For WebKit-based browsers like Chrome, made scroll bar invisible */
+::-webkit-scrollbar {
+  width: 0;
 }
