@@ -9,9 +9,9 @@ const handleClick = () => {
 </script>
 
 <template>
-    <div class="back-button-main">
+    <div class="back-button-main" @click="handleClick">
         <!-- <button class="button" @click="handleClick">Back</button> -->
-        <iconElement name="arrow_back_ios_new" :google="true" @click="handleClick" class="button"/>
+        <iconElement name="arrow_back_ios_new" :google="true" class="button"/>
     </div>
 </template>
 
