@@ -4,7 +4,7 @@ import { useScreenSize } from '@/composables/useScreenSize'
 // import navbarComponent from '@/components/navbarComponent.vue'
 import nowPlaying from '@/components/nowPlaying.vue'
 import centerComponent from '@/components/centerComponent.vue'
-// import nowPlayingMobile from '@/components/nowPlayingMobile.vue'
+import nowPlayingMobile from '@/components/nowPlayingMobile.vue'
 
 const navbarToggled = ref(false)
 const { isMobile } = useScreenSize()
@@ -19,9 +19,9 @@ const { isMobile } = useScreenSize()
     <div v-if="!isMobile" class="now-playing">
       <nowPlaying />
     </div>
-    <!-- <div v-if="isMobile">
+    <div v-if="isMobile">
       <nowPlayingMobile />
-    </div> -->
+    </div>
   </div>
 </template>
 
