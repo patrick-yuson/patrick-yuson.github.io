@@ -72,7 +72,7 @@ const { redirectToUrl } = useRedirect()
   flex-direction: row;
   gap: 32px;
   overflow-x: scroll;
-  min-height: 115px;
+  min-height: 130px;
   padding: 5px;
 }
 .icon-and-caption {
