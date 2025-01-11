@@ -281,19 +281,28 @@
       "id": 1,
       "name": "Rory.io",
       "subheader": "A Lumin Support Portal",
-      "src": "../assets/Rory.io_System_Details.png"
+      "src": "../assets/Rory.io_System_Details",
+      "youtubeID": "BNPbuJIAYLk",
+      "videoTitle": "Rory.io Demo (No Audio)",
+      "projectDescription": "A team of two interns and I were tasked with designing and implementing a single-page web applications using Vue.js for customer support at Lumin to assist with device troubleshooting and diagnostics. We accomplished this by pulling data from four different API's and formatting it in an intuitive manner. We also practiced version control and branch management with Git and used Node.js and NPM for development. Lumin also had a pre-existing library of Vue components we were able to use to keep consistent branding and UI. Lastly, we utilized an agile scrum methodology by participating in daily sprints in order to stay on task, develop achievable goals for each day, and remain in constant communication with team members and stakeholders."
     },
     {
       "id": 2,
-      "name": "ML4VA Project",
-      "subheader": "CS 4774",
-      "src": "../assets/ML4VA_Image.png"
+      "name": "Daily Bugle Web Application",
+      "subheader": "CS 4260: Internet Scale Applications",
+      "src": "../assets/dailybugle",
+      "youtubeID": "jkt4p4-qDTU",
+      "videoTitle": "Demo of Daily Bugle Web Application",
+      "projectDescription": "Over the course of four weeks, I developed a vanilla Javascript, HTML, and CSS web application that was supposed to act as a website for the \"Daily Bugle.\" It also had a Node.js backend with various services to handle CRUD operations with a MongoDB database. By the end of the project, the application was ultimately containerized using Docker, with each container being deployed as a node within a single Kubernetes pod."
     },
     {
       "id": 3,
-      "name": "Tutoring Web Application",
-      "subheader": "CS 3240",
-      "src": "https://news.virginia.edu/sites/default/files/article_image/institutional_announcement_ss_header.jpg"
+      "name": "Clustering and Regression COVID-19 Analysis",
+      "subheader": "CS 4774: Machine Learning",
+      "src": "../assets/ML4VA_Image",
+      "youtubeID": "L0fJr3P9YdU",
+      "videoTitle": "Using K-Means Clustering and Linear Regression to Examine COVID-19 Trends in Virginia",
+      "projectDescription": "For this project I worked with a team of two other students to use machine learning models in order to investigate whether household income or population had significant effects on COVID-19-related hospitalizations and deaths in Virginia. This project was created for the Fall 2023 Semester of CS 4774: Machine Learning at UVA. Ultimately, we discovered that using a K-Means clustering model began to depict clusters heavily influenced by population because with an increased population there is bound to be more cases and hospitalizations. In terms of Linear Regression, we found that the model that we developed could not be considered accurate due to a high root mean squared error (RMSE)."
     }
   ]
 }

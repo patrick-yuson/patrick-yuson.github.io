@@ -18,10 +18,21 @@ const currProjectData = computed(() => {
       <backButtonElement />
     </div>
     <div class="project-header">{{ currProjectData.name }}</div>
-    <div class="project-youtube-embed">
+    <div class="project-description">
+      <div class="h2 project-subheader">
+        Description
+      </div>
+      <div class="project-description-body">
+        {{ currProjectData.projectDescription }}
+      </div>
+    </div>
+    <div class="h2 project-subheader">
+      Demo
+    </div>
+    <div class="project-youtube-embed" v-if="currProjectData.youtubeID">
       <LiteYouTubeEmbed
-        id="BNPbuJIAYLk"
-        title="Rick Astley - Never Gonna Give You Up (Official Music Video)"
+        :id="currProjectData.youtubeID"
+        :title="currProjectData.videoTitle"
       />
     </div>
   </div>
@@ -37,5 +48,8 @@ const currProjectData = computed(() => {
 }
 .project-youtube-embed {
   margin-top: 20px;
+}
+.project-subheader {
+  margin: 20px 0px 20px 0px;
 }
 </style>
