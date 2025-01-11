@@ -1,6 +1,6 @@
 <script setup>
 import albumCoverElement from './albumCoverElement.vue'
-import { useProjectEventsHandler } from '@/composables/projectEventsHandler';
+import { useProjectEventsHandler } from '@/composables/projectEventsHandler'
 
 const albums = defineModel('albums', { default: null, type: [Array, null] })
 const { setCurrentProject } = useProjectEventsHandler()
@@ -31,8 +31,7 @@ const { setCurrentProject } = useProjectEventsHandler()
 
 <style scoped>
 .album-row-main {
-  height: 250px;
-  padding: 0px 0px 20px 0px;
+  height: 100%;
 }
 .album-row-flex {
   display: flex;
@@ -50,11 +49,12 @@ const { setCurrentProject } = useProjectEventsHandler()
   cursor: pointer;
 }
 .album-row-cover {
+  width: 175px;
   height: 175px;
   overflow: hidden;
 }
 .album-and-name {
-  width: 250px;
+  width: 175px;
 }
 .album-name {
   padding-top: 10px;

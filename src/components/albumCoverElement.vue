@@ -2,7 +2,7 @@
 import { computed } from 'vue'
 import ml4vaImg from '../assets/ML4VA_Image.png'
 import roryIO from '../assets/Rory.io_System_Details.png'
-import bugle from '../assets/dailybugle.jpg'
+import bugle from '../assets/dailybugle.jpeg'
 
 const src = defineModel('src', { default: null, type: [String, null] })
 const forRow = defineModel('forRow', { default: false, type: [Boolean, null] })
