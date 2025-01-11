@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue'
-import navbarComponent from '@/components/navbarComponent.vue'
+// import navbarComponent from '@/components/navbarComponent.vue'
 import nowPlaying from '@/components/nowPlaying.vue'
 import centerComponent from '@/components/centerComponent.vue'
 
@@ -10,7 +10,7 @@ const navbarToggled = ref(false)
 <template>
   <div class="about-main">
     <div class="left">
-      <navbarComponent v-model="navbarToggled" />
+      <!-- <navbarComponent v-model="navbarToggled" /> -->
       <centerComponent :navbarHidden="navbarToggled" />
     </div>
     <div class="now-playing">
