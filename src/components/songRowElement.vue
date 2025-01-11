@@ -46,11 +46,29 @@ const isHovering = ref(false)
       <albumCoverElement :src="albumCover" :forRow="true" />
     </div>
     <div class="song-row-title-artist">
-      <div class="song-row-title" v-if="title">{{ title }}</div>
-      <div class="song-row-artist" v-if="artist">{{ artist }}</div>
+      <div
+        class="song-row-title"
+        v-if="title"
+        :style="{ fontSize: isXs ? 'var(--font-size-mobile-header)' : 'var(--font-size-h4)' }"
+      >
+        {{ title }}
+      </div>
+      <div
+        class="song-row-artist"
+        v-if="artist"
+        :style="{ fontSize: isXs ? 'var(--font-size-mobile-body)' : 'var(--font-size-h4)' }"
+      >
+        {{ artist }}
+      </div>
     </div>
     <div class="song-row-location" v-if="location && !isXs">{{ location }}</div>
-    <div class="song-row-duration" v-if="duration">{{ duration }}</div>
+    <div
+      class="song-row-duration"
+      v-if="duration"
+      :style="{ fontSize: isXs ? 'var(--font-size-mobile-body)' : 'var(--font-size-h4)' }"
+    >
+      {{ duration }}
+    </div>
   </div>
 </template>
 
@@ -78,7 +96,6 @@ const isHovering = ref(false)
   margin-left: 10px;
 }
 .song-row-title {
-  font-size: var(--font-size-h4);
   font-weight: bold;
   margin-bottom: 5px;
 }
