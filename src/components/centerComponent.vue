@@ -1,7 +1,7 @@
 <script setup>
 import profileComponent from './profileComponent.vue'
-import projectElement from './projectElement.vue';
-import { useProjectEventsHandler } from '@/composables/projectEventsHandler';
+import projectElement from './projectElement.vue'
+import { useProjectEventsHandler } from '@/composables/projectEventsHandler'
 
 // eslint-disable-next-line no-unused-vars
 const props = defineProps({
@@ -12,8 +12,8 @@ const { currentProject } = useProjectEventsHandler()
 
 <template>
   <div class="center-main component no-padding" :class="{ full: navbarToggled === false }">
-    <projectElement v-if="currentProject"/>
-    <profileComponent v-else/>
+    <projectElement v-if="currentProject" />
+    <profileComponent v-else />
   </div>
 </template>
 
