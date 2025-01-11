@@ -2,6 +2,7 @@
 import albumCoverElement from './albumCoverElement.vue'
 import iconElement from './iconElement.vue'
 import { ref, computed } from 'vue'
+import { useScreenSize } from '@/composables/useScreenSize'
 
 const left = defineModel('left', { default: null, type: [Number, null] })
 const albumCover = defineModel('albumCover', { default: null, type: [String, null] })
@@ -15,6 +16,8 @@ const emits = defineEmits(['click'])
 const isClicked = computed(() => {
   return currentSong.value.id === left.value
 })
+
+const { isXs } = useScreenSize()
 
 const isHovering = ref(false)
 </script>
@@ -46,7 +49,7 @@ const isHovering = ref(false)
       <div class="song-row-title" v-if="title">{{ title }}</div>
       <div class="song-row-artist" v-if="artist">{{ artist }}</div>
     </div>
-    <div class="song-row-location" v-if="location">{{ location }}</div>
+    <div class="song-row-location" v-if="location && !isXs">{{ location }}</div>
     <div class="song-row-duration" v-if="duration">{{ duration }}</div>
   </div>
 </template>
