@@ -7,9 +7,11 @@ import songRowElement from './songRowElement.vue'
 import albumRowElement from './albumRowElement.vue'
 import songData from '../assets/songData.json'
 import { useRedirect } from '@/composables/useRedirect'
+import { useScreenSize } from '@/composables/useScreenSize'
 
 const { currentSong, setCurrentSong, experiences, leadership } = useSongEventsHandler()
 const { redirectToUrl } = useRedirect()
+const { isXs } = useScreenSize()
 
 const data = ref(JSON.parse(JSON.stringify(songData)))
 const icons = data.value.socials
@@ -18,7 +20,7 @@ const icons = data.value.socials
 <template>
   <div class="profile-main">
     <div class="profile-header-card">
-      <div class="profile-name">Patrick Yuson</div>
+      <div class="profile-name" :style="{ fontSize: isXs ? '50px' : '75px' }">Patrick Yuson</div>
     </div>
     <div class="profile-socials">
       <iconElement
@@ -102,7 +104,6 @@ const icons = data.value.socials
   z-index: 2;
   bottom: 20px;
   left: 20px;
-  font-size: 75px;
   font-weight: bold;
 }
 .profile-song-row {

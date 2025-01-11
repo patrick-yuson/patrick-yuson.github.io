@@ -1,9 +1,11 @@
 <script setup>
 import albumCoverElement from './albumCoverElement.vue'
 import { useProjectEventsHandler } from '@/composables/projectEventsHandler'
+import { useScreenSize } from '@/composables/useScreenSize'
 
 const albums = defineModel('albums', { default: null, type: [Array, null] })
 const { setCurrentProject } = useProjectEventsHandler()
+const { isXs } = useScreenSize()
 </script>
 
 <template>
@@ -20,8 +22,18 @@ const { setCurrentProject } = useProjectEventsHandler()
                 class="album-row-cover"
               />
             </div>
-            <div class="album-name">{{ album.name }}</div>
-            <div class="album-subheader">{{ album.subheader }}</div>
+            <div
+              class="album-name"
+              :style="{ fontSize: isXs ? 'var(--font-size-mobile-header)' : 'var(--font-size-h4)' }"
+            >
+              {{ album.name }}
+            </div>
+            <div
+              class="album-subheader"
+              :style="{ fontSize: isXs ? 'var(--font-size-mobile-body)' : 'var(--font-size-h4)' }"
+            >
+              {{ album.subheader }}
+            </div>
           </div>
         </div>
       </div>
@@ -58,7 +70,6 @@ const { setCurrentProject } = useProjectEventsHandler()
 }
 .album-name {
   padding-top: 10px;
-  font-size: var(--font-size-h4);
   font-weight: bold;
 }
 </style>
