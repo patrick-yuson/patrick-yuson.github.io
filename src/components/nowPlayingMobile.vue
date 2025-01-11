@@ -7,7 +7,7 @@ const { currentSong } = useSongEventsHandler()
 </script>
 
 <template>
-  <div class="now-playing-mobile-main">
+  <div @click="$emit('clicked')" class="now-playing-mobile-main">
     <div class="now-playing-mobile-song">
       <albumCoverElement
         v-if="currentSong.album_cover"

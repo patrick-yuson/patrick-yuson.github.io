@@ -5,14 +5,21 @@ import cardElement from './cardElement.vue'
 import iconElement from './iconElement.vue'
 import { useSongEventsHandler } from '@/composables/songEventsHandler'
 import { useRedirect } from '@/composables/useRedirect'
+import { useScreenSize } from '@/composables/useScreenSize'
 
 const { currentSong } = useSongEventsHandler()
 const { redirectToUrl } = useRedirect()
+const { isMobile } = useScreenSize()
 </script>
 
 <template>
-  <div class="now-playing-main component">
-    <headerElement name="Now Playing" size="h3" weight="bold" />
+  <div class="now-playing-main component" :style="{ height: isMobile ? '75vh' : '100vh' }">
+    <div class="now-playing-top">
+      <headerElement name="Now Playing" size="h3" weight="bold" />
+      <div v-if="isMobile" class="close-div" @click="$emit('clicked')">
+        <iconElement name="close" :google="true" class="close-button" />
+      </div>
+    </div>
     <albumCoverElement
       v-if="currentSong.album_cover"
       class="now-playing-album"
@@ -47,8 +54,10 @@ const { redirectToUrl } = useRedirect()
 </template>
 
 <style>
-.now-playing-main {
-  height: 100vh;
+.now-playing-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .now-playing-title {
   margin: 20px 0px 0px 0px;
@@ -95,5 +104,21 @@ const { redirectToUrl } = useRedirect()
 }
 .space-bottom {
   margin-bottom: 20px;
+}
+.close-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
+.close-div:hover {
+  background-color: var(--hh-c-dark-brown);
+  border-radius: 50%;
+}
+.close-button:hover {
+  cursor: pointer;
 }
 </style>
