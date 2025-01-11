@@ -4,10 +4,18 @@ import { useScreenSize } from '@/composables/useScreenSize'
 // import navbarComponent from '@/components/navbarComponent.vue'
 import nowPlaying from '@/components/nowPlaying.vue'
 import centerComponent from '@/components/centerComponent.vue'
-// import nowPlayingMobile from '@/components/nowPlayingMobile.vue'
+import nowPlayingMobile from '@/components/nowPlayingMobile.vue'
 
 const navbarToggled = ref(false)
+const footerClicked = ref(false)
 const { isMobile } = useScreenSize()
+
+const handleModalClose = () => {
+  footerClicked.value = false
+}
+const handleFooterClick = () => {
+  footerClicked.value = true
+}
 </script>
 
 <template>
@@ -19,9 +27,14 @@ const { isMobile } = useScreenSize()
     <div v-if="!isMobile" class="now-playing">
       <nowPlaying />
     </div>
-    <!-- <div v-if="isMobile">
-      <nowPlayingMobile />
-    </div> -->
+    <div v-if="isMobile && footerClicked" class="modal-container">
+      <div class="modal-content">
+        <nowPlaying @clicked="handleModalClose" />
+      </div>
+    </div>
+    <div v-if="isMobile && !footerClicked">
+      <nowPlayingMobile @clicked="handleFooterClick" />
+    </div>
   </div>
 </template>
 
@@ -39,23 +52,27 @@ const { isMobile } = useScreenSize()
 .now-playing {
   width: 25vw;
 }
-/* Mobile View - Stick to Bottom */
-
-/* .now-playing-mobile {
+.modal-content {
+  border-radius: 15px;
+  max-width: 90%;
+  max-height: 75%;
+  width: 400px;
+  text-align: center;
+}
+.modal-container {
   position: fixed;
-  bottom: 0;
-  left: 0;
+  top: 0;
   width: 100%;
-  background: var(--bg-color, #000);
-  padding: 10px;
-  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   z-index: 1000;
-} */
-/* Ensure content above "Now Playing" is scrollable */
-body {
-  padding-bottom: 60px; /* Adjust based on "Now Playing" height */
 }
+/* Ensure content above "Now Playing" is scrollable */
+/* body {
+  padding-bottom: 60px; 
+} */
 </style>
