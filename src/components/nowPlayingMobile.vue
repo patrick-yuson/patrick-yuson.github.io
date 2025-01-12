@@ -45,7 +45,8 @@ const { currentSong } = useSongEventsHandler()
   gap: 15px;
 }
 .now-playing-mobile-album {
-  height: 40px;
+  width: 45px;
+  height: 45px;
 }
 .now-playing-mobile-song-title {
   font-size: var(--font-size-mobile-header);
