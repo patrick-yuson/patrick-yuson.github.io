@@ -83,6 +83,7 @@ const { isMobile } = useScreenSize()
   overflow-x: scroll;
   min-height: 130px;
   padding: 5px;
+  margin-bottom: 3px;
 }
 .icon-and-caption {
   display: flex;

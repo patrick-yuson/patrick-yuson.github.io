@@ -93,9 +93,9 @@ const icons = data.value.socials
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('../assets/personal_website_cover.JPG');
+  background-image: url('../assets/cover100725.jpg');
   background-size: cover;
-  background-position: 80% 73%;
+  background-position: 50% 60%;
   filter: brightness(85%);
   z-index: 1;
 }

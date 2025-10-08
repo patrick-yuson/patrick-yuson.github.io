@@ -2,6 +2,62 @@
   "songs": [
     {
       "id": 1,
+      "title": "Associate SWE Consultant",
+      "artist": "CapTech",
+      "duration": "July 2025-Present",
+      "location": "Richmond, VA",
+      "album_cover": "https://miro.medium.com/v2/resize:fit:1000/1*hf0ecpFZfddCxuYMRC9hxQ.png",
+      "details": [
+        {
+          "id": 1,
+          "type": "card",
+          "subType": "plaintext",
+          "header": "My Task",
+          "header_src": null,
+          "description": "As a consultant with CapTech, I tackle every day with intellectual curiosity and relentless drive to create innovative technical solutions for a wide range of clients"
+        },
+        {
+          "id": 2,
+          "type": "card",
+          "subType": "iconArray",
+          "header": "Skills Learned",
+          "header_src": null,
+          "icons": [
+            {
+              "id": 1,
+              "name": "Angular",
+              "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png"
+            },
+            {
+              "id": 2,
+              "name": "ASP.NET",
+              "src": "https://www.svgrepo.com/show/508894/aspnet.svg"
+            },
+            {
+              "id": 3,
+              "name": ".NET Entity Framework",
+              "src": "https://www.tonycollett.com/content/images/wordpress/2023/07/entity-framework.png"
+            },
+            {
+              "id": 4,
+              "name": "SQL",
+              "src": "https://www.svgrepo.com/show/331760/sql-database-generic.svg"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "type": "card",
+          "subType": "header-photo-plaintext",
+          "header": "About the Artist",
+          "description": "CapTech is a technology consulting firm delivering innovative solutions in digital transformation, data analytics, and software development. They collaborate with clients to optimize systems, enhance customer experiences, and drive strategic business growth.",
+          "header_src": "https://pubweb-prod.transforms.svdcdn.com/production/workImages/discovery-program.jpg?w=1330&h=764&auto=compress%2Cformat&fit=crop&dm=1755529621&s=d131569040c8a0c871861937931c2928",
+          "website": "https://www.captechconsulting.com/"
+        }
+      ]
+    },
+    {
+      "id": 2,
       "title": "Frontend Engineering Intern",
       "artist": "Lumin",
       "duration": "June 2024-August 2024",
@@ -58,7 +114,7 @@
       ]
     },
     {
-      "id": 2,
+      "id": 3,
       "title": "Launch Program",
       "artist": "Forge",
       "duration": "January 2024-June 2024",
@@ -115,7 +171,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": 4,
       "title": "Marketing Intern",
       "artist": "FilExcellence",
       "duration": "July 2023-August 2023",
@@ -142,7 +198,7 @@
       ]
     },
     {
-      "id": 4,
+      "id": 5,
       "title": "Student Advisor",
       "artist": "Organization of Young Filipino Americans (OYFA)",
       "duration": "March 2024-Present",
@@ -169,7 +225,7 @@
       ]
     },
     {
-      "id": 5,
+      "id": 6,
       "title": "Pan-Asian Council Co-Chair",
       "artist": "Asian Student Union",
       "duration": "April 2024-Present",
@@ -196,12 +252,12 @@
       ]
     },
     {
-      "id": 6,
+      "id": 7,
       "title": "DEI Committee Member",
       "artist": "Fourth Year Trustees",
       "duration": "April 2024-Present",
       "location": "Charlottesville, VA",
-      "album_cover": "https://www.uva2025.org/favicon.ico",
+      "album_cover": "https://monticello-www.s3.amazonaws.com/files/modules/square-xsml-uva-rotunda-dusk-dec-16-ss-02-2-cropped-3.jpg",
       "details": [
         {
           "id": 1,
@@ -223,7 +279,7 @@
       ]
     },
     {
-      "id": 7,
+      "id": 8,
       "title": "President",
       "artist": "Organization of Young Filipino Americans (OYFA)",
       "duration": "February 2023-April 2024",

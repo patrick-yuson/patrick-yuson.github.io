@@ -2,8 +2,10 @@ import { ref } from 'vue'
 import songData from '../assets/songData.json'
 const data = JSON.parse(JSON.stringify(songData))
 const songs = ref(data.songs)
-const experiences = ref(songs.value.slice(0, 3))
-const leadership = ref(songs.value.slice(3))
+
+// Needs to be updated whenever new song is added
+const experiences = ref(songs.value.slice(0, 4))
+const leadership = ref(songs.value.slice(4))
 
 const currentSong = ref(songs.value[0])
 
